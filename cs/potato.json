@@ -13,6 +13,7 @@
   "FIntRenderShadowIntensity": "0",
   "FIntDebugForceMSAASamples": "0",
   "FIntV1MenuLanguageSelectionFeaturePerMillageRollout": "null",
+  "FFlagAddHapticsToggle": "False",
   "FFlagAlwaysShowVRToggleV3": "False",
   "FFlagAdServiceEnabled": "False",
   "FFlagDisableFeedbackSoothsayerCheck": "False",
