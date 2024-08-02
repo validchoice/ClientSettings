@@ -5,6 +5,7 @@
   "FIntFullscreenTitleBarTriggerDelayMillis": "3600000",
   "FIntRenderShadowIntensity": "0",
   "FFlagAlwaysShowVRToggleV3": "False",
+  "FFlagAddHapticsToggle": "False",
   "FFlagAdServiceEnabled": "False",
   "FFlagDisableFeedbackSoothsayerCheck": "False",
   "FIntV1MenuLanguageSelectionFeaturePerMillageRollout": "null",
