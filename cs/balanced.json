@@ -9,7 +9,7 @@
   "FIntFRMMaxGrassDistance": "0",
   "FIntRenderGrassDetailStrands": "0",
   "FIntRenderShadowIntensity": "0",
-  "FIntDebugForceMSAASamples": "0",
+  "FIntDebugForceMSAASamples": "1",
   "FIntV1MenuLanguageSelectionFeaturePerMillageRollout": "null", 
   "FFlagAddHapticsToggle": "False",
   "FFlagAlwaysShowVRToggleV3": "False",
