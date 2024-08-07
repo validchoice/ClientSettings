@@ -43,7 +43,7 @@ if not exist "!star!" (
         exit
     )
 ) 
-:: I don't think I should add error handling here, if you typed invalid option then womp womp
+:: I don't think I should add error handling here, if you typed invalid option then womp womp.
 
 
 :: Backup flag could be found in 'Backup' folder!!
@@ -81,6 +81,9 @@ if "!x!" equ "cs" (
     start "" "!star!" 
     goto main
 )  
+
+echo nuh uh '!x!' is not a valid option
+timeout /t 2 /nobreak >nul & goto main
 
 
 :: If none of the options are selected, tell user to read the available commands
