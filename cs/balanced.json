@@ -1,5 +1,5 @@
 {
-  "DFIntTaskSchedulerTargetFps": "360",
+  "DFIntTaskSchedulerTargetFps": "720",
   "DFIntDebugFRMQualityLevelOverride": "1",
   "DFIntTextureQualityOverride": "2",
   "DFFlagTextureQualityOverrideEnabled": "True",
