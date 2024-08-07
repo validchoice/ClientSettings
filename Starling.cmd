@@ -4,6 +4,7 @@ title Starling
 chcp 65001 >nul
 setlocal enabledelayedexpansion
 
+:: Enable ANSI to change text color.
 set y=
 for /f %%i in (
     'echo prompt $E ^| cmd'
@@ -45,11 +46,15 @@ if not exist "!star!" (
         exit
     )
 ) 
+
+:: Backup flag could be found in 'Backup' folder!!
+
 if not exist "%~d0\Backup" (
     mkdir "%~dp0\Backup" 
     xcopy "!star!\ClientSettings" "%~dp0\Backup" /y 
 )
 
+:: Before you proceed, please check the commands by typing 'help' (! case insensitive !)
 
 :main
 cls 
@@ -76,7 +81,12 @@ if "!x!" equ "3" (
 if "!x!" equ "cs" (
     start "" "!star!" 
     goto main
-) 
+)  
+
+
+:: If none of the options are selected, tell user to read the available commands
+::                                 ↓
+
 
 :helpcmd
 cls 
