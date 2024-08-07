@@ -42,8 +42,9 @@ if not exist "!star!" (
         start "" "https://github.com/validchoice/Whisperwind" 
         exit
     )
-        :: I don't think I should add error handling here, if you typed invalid option then womp womp
 ) 
+:: I don't think I should add error handling here, if you typed invalid option then womp womp
+
 
 :: Backup flag could be found in 'Backup' folder!!
 
