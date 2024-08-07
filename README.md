@@ -1,4 +1,6 @@
 # Starling 
-this is a github repository for my fast flag 
+This is a github repository for my fast flag.
 
-if you want to check them, they could be found [here](https://github.com/validchoice/Starling/tree/main/cs)
+If you want to check them, they could be found [here](https://github.com/validchoice/Starling/tree/main/cs).
+
+If you are like super lazy, you could use [my program](https://github.com/validchoice/Sarling/blob/main/Starling.cmd).
