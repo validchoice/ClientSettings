@@ -12,13 +12,10 @@ for /f %%i in (
     set y=%%i
 ) 
 
-set red=!y![31m
-set green=!y![32m
-set yellow=!y![33m
-set purple=!y![35m
 set blue=!y![36m
 set reset=!y![0m 
-set star=%userprofile%\AppData\Local\Bloxstrap\Modifications\
+set star=%userprofile%\AppData\Local\Bloxstrap\Modifications
+:: I'm lazy to type bloxstrap path please forgive me :(
 
 if not exist "!star!" (
     echo. 
@@ -45,6 +42,7 @@ if not exist "!star!" (
         start "" "https://github.com/validchoice/Whisperwind" 
         exit
     )
+        :: I don't think I should add error handling here, if you typed invalid option then womp womp
 ) 
 
 :: Backup flag could be found in 'Backup' folder!!
@@ -116,7 +114,7 @@ echo.
 :: Powershell is unstable so I choose curl instead
 curl -s -o "!star!\ClientSettings\ClientAppSettings.json" "https://raw.githubusercontent.com/validchoice/Starling/main/cs/balanced.json"
 echo Done^^!
-echo Successfully applied balanced graphics^^!
+echo Finished applied balanced graphics^^!
 timeout /t 3 /nobreak >nul & goto main 
 
 :default 
@@ -126,7 +124,7 @@ echo Applying normal graphics...
 echo.
 curl -s -o "!star!\ClientSettings\ClientAppSettings.json" "https://raw.githubusercontent.com/validchoice/Starling/main/cs/normal.json"
 echo Done^^!
-echo Successfully applied normal graphics^^! 
+echo Finished applied normal graphics^^! 
 timeout /t 3 /nobreak >nul & goto main 
 
 :potato 
@@ -136,5 +134,5 @@ echo Applying potato graphics...
 echo.
 curl -s -o "!star!\ClientSettings\ClientAppSettings.json" "https://raw.githubusercontent.com/validchoice/Starling/main/cs/potato.json"
 echo Done^^!
-echo Successfully applied potato graphics^^! 
+echo Finished applied potato graphics^^! 
 timeout /t 3 /nobreak >nul & goto main 
