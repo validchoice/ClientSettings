@@ -15,7 +15,6 @@ for /f %%i in (
 set blue=!y![36m
 set reset=!y![0m 
 set star=%userprofile%\AppData\Local\Bloxstrap\Modifications
-:: I'm lazy to type bloxstrap path please forgive me :(
 
 if not exist "!star!" (
     echo. 
@@ -30,21 +29,18 @@ if not exist "!star!" (
 
     if "!x!" equ "" (
         winget install bloxstrap 
-        echo.
         echo Great, Bloxstrap is successfully installed. 
         echo.
         timeout /t 3 /nobreak >nul & goto main
     ) 
 
     if "!x!" equ "1" (
-        echo This is not the place where your looking for, you are supposed to use Whisperwind instead
+        echo This is not the place where your looking for, you are supposed to use Whisperwind instead.
         timeout /t 2 /nobreak >nul
         start "" "https://github.com/validchoice/Whisperwind" 
         exit
     )
 ) 
-:: I don't think I should add error handling here, if you typed invalid option then womp womp.
-
 
 :: Backup flag could be found in 'Backup' folder!!
 
@@ -77,16 +73,16 @@ if "!x!" equ "3" (
     goto potato
 ) 
 
-if "!x!" equ "cs" (
+if /i "!x!" equ "cs" (
     start "" "!star!" 
     goto main
 )  
 
-echo nuh uh '!x!' is not a valid option
+echo nuh uh '!x!' is not a valid option.
 timeout /t 2 /nobreak >nul & goto main
 
 
-:: If none of the options are selected, tell user to read the available commands
+:: If none of the options are selected, tell user to read the available commands.
 ::                                 ↓
 
 
